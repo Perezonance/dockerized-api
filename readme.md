@@ -23,7 +23,7 @@ The exact docker commands I use to build the image and launch the container were
 ```
 docker build -t my-go-api .
 
-docker run --name api-ctnr -d -p 8080:8093 my-go-api
+docker run --rm --name api-ctnr -d -p 8080:8093 my-go-api
 ```
 When building the docker image make sure you are in the directory of the project you want to build and don't forget the 
 '.' at the end.
